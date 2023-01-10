@@ -1,0 +1,76 @@
+:root{
+    --color-primario: black;
+    --line-style: 10px solid var(--color-primario);
+    --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+body{
+    background: #30E8BF;  
+    background: -webkit-linear-gradient(to right, #FF8235, #30E8BF); 
+    background: linear-gradient(to right, #FF8235, #30E8BF); 
+    user-select: none;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--font-family);
+    color: var(--color-primario);
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    justify-content: center;
+}
+
+.cuadrado{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.arriba{
+    border-bottom: var(--line-style);
+
+}
+
+.medio{
+border-left: var(--line-style);
+border-right: var(--line-style);
+}
+
+.abajo{
+border-top: var(--line-style);
+}
+
+.ganador{
+    background-color: aquamarine;
+}
+
+dialog{
+    text-align: center;
+    min-width: 50vw;
+    background-color: rgba(240, 248, 255, 0.70);
+    padding: 5rem;
+    border: unset;
+    border-radius: 50px;
+}
+
+dialog h2{
+    font-family: var(--font-family);
+    font-size: xx-large;
+}
+
+dialog button{
+    padding: 1rem;
+    font-size: larger;
+}
+
+dialog::backdrop{
+    backdrop-filter: blur(3px);
+}
